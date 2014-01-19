@@ -2,8 +2,8 @@ package newpackage;
 
 public class Person4 {
 
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
 
     public Person4() {
         }
@@ -17,4 +17,26 @@ public class Person4 {
     public String getFullName() {
         return (firstName + " " + lastName);
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+
+
+
+
+
 }
