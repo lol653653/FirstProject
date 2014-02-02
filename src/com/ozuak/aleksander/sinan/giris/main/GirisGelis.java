@@ -1,11 +1,14 @@
+package com.ozuak.aleksander.sinan.giris.main;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-package com.ozuak.aleksander.sinan.giris;
 
+
+import com.ozuak.aleksander.sinan.giris.KaydolDialog;
 import com.ozuak.aleksander.sinan.giris.main.Main;
 import javax.swing.JOptionPane;
 
@@ -13,13 +16,18 @@ import javax.swing.JOptionPane;
  *
  * @author user
  */
-public class Giris extends javax.swing.JFrame {
+public class GirisGelis extends javax.swing.JFrame {
 
     /**
      * Creates new form giris
      */
-    public Giris() {
+    public GirisGelis() {
         initComponents();
+    this.setLocationRelativeTo(this);
+    }
+
+    GirisGelis(Main aThis, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -152,20 +160,21 @@ if(!userName.equals("lol")){
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Giris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GirisGelis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Giris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GirisGelis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Giris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GirisGelis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Giris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GirisGelis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Giris().setVisible(true);
+                new GirisGelis().setVisible(true);
             }
         });
     }
